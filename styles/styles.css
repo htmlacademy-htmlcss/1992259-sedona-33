@@ -27,23 +27,18 @@ body {
   background-color: #FFFFFF;
 }
 
-.navigation-link .navigation-link-current{
-  font-family: "PT-sans", sans-serif;
-  font-style: normal;
+.navigation-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
   text-decoration: none;
 }
 
 .want-button {
-  font-family: "PT-sans";
   font-weight: 700;
-  font-style: normal;
-  font-size:16px;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -52,7 +47,7 @@ body {
 }
 
 .welcome-sedona {
-  background-image: url("../images/Sedona-background.jpg");
+  background-image: url("../images/index-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -96,12 +91,6 @@ body {
   color: #333333;
 }
 
-.advantages-description-white {
-  font-weight: 400;
-  color: #FFFFFF;
-  background-color: #83B3D3;
-}
-
 .search {
   text-align: center;
   font-weight: 700;
@@ -127,8 +116,6 @@ body {
 
 .main-search-button {
   text-align: center;
-  font-family: "PT-sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -136,7 +123,7 @@ body {
 }
 
 .subscribe {
-  background-image: url("../images/footer-background.jpg");
+  background-image: url("../images/footer-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align:center;
@@ -161,13 +148,10 @@ body {
 }
 
 .footer-contacs {
-  font-family: "PT-sans";
   font-weight: 400;
-  font-style:normal;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -200,8 +184,6 @@ body {
 }
 
 .search-button {
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
@@ -214,14 +196,12 @@ body {
 }
 
 .main-inner {
-  background-image: url("../images/catalog-background.jpg");
+  background-image: url("../images/inner-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .inner-header-title {
-  font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -238,7 +218,6 @@ body {
 }
 
 .catalog-filter-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -246,7 +225,6 @@ body {
 }
 
 .catalog-filter-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -254,7 +232,6 @@ body {
 }
 
 .button-submit {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -267,7 +244,6 @@ body {
 }
 
 .button-reset {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -276,7 +252,6 @@ body {
 }
 
 .found {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -285,7 +260,6 @@ body {
 }
 
 .hotel-card-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
@@ -293,7 +267,6 @@ body {
 }
 
 .hotel .product-card-price {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -301,7 +274,6 @@ body {
 }
 
 .product-card-button {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -312,7 +284,6 @@ body {
 }
 
 .favorite-button {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -322,8 +293,7 @@ body {
   background-color: #83B3D3;
 }
  .rating {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -332,8 +302,6 @@ body {
  }
 
  .pagination-download-more {
-  font-family: PT Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -345,4 +313,4 @@ body {
   background-color: #83B3D3;
  }
 
- 
+
