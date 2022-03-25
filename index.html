@@ -3,14 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/outline.css">
     <link rel="stylesheet" href="styles/outline-settings.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="page-container">
@@ -32,12 +27,12 @@
         <ul class="navigation-user clear-list">
           <li class="user-item">
             <a class="user-link open-popup" href="#popup">
-              <img src="/images/search.svg" alt="Поиск">
+              <img src="images/search.svg" alt="Поиск">
             </a>
           </li>
           <li class="user-item">
             <a class="user-link" href="#">
-              <img src="/images/heart.svg" alt="Избранное">
+              <img src="images/heart.svg" alt="Избранное">
             </a>
             <li class="user-item">
               <button class="want-button" type="button">
@@ -54,12 +49,50 @@
             <img src="images/bg-mask.svg" alt="Маска">
           </div>
         </div>
+        <div id="popup" class="popup">
+          <a class="popup-area" href="#"></a>
+          <div class="popup-body">
+            <div class="popup-content">
+              <div class="block-title-cross"><h2>Поиск гостиницы в Седоне</h2><a class="popup-close" href="#">
+                <img src="images/cross.svg" width="13" height="13" alt="Закрыть">
+              </a></div>
+
+			  <div class="form-input-blocks modal-show modal-error">
+            <div class="arrival-date form-input-block">
+              <label for="arrival-input" class="form-label">Дата заезда:</label>
+              <input class="form-input search-filter-item" type="date" id="date">
+            </div>
+            <div class="departure-date form-input-block">
+              <label for="departure-input" class="form-label">Дата выезда:</label>
+              <input class="form-input search-filter-item" type="date" id="date">
+            </div>
+            <div class="amount-people form-input-block">
+              <div class="amount-people-block">
+                <label for="adult" class="form-label amount-form-label">Взрослые:</label>
+                <button type="button" class="amount-people-button input-button-minus" id="amountAdultMinus"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
+                <input type="number" min="1" max="10" name="adult" value="2" id="adult" class="form-input form-input-num">
+                <button type="button" class="amount-people-button input-button-plus" id="amountAdultPlus"><span class="visually-hidden">Увеличить количество взрослых</span></button>
+              </div>
+              <div class="amount-people-block">
+                <label for="children" class="form-label amount-form-label">Дети:</label>
+                <button type="button" class="amount-people-button input-button-minus" id="amountChildrenMinus"><span class="visually-hidden">Уменьшить количество детей</span></button>
+                <input type="number" min="0" max="10" name="children" value="0" id="children" class="form-input form-input-num">
+                <button type="button" class="amount-people-button input-button-plus" id="amountChildrenPlus"><span class="visually-hidden">Увеличить количество детей</span></button>
+              </div>
+            </div>
+            <div class="submit-block">
+              <button type="submit" class="submit-form-button">Найти</button>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
         <section class="advantages">
           <div class="advantages-header-columns">
-            <h1 class="advantages-header">
+            <h3 class="advantages-header">
               Седона - небольшой городок в Аризоне,
               заслуживающий большего!
-            </h1>
+            </h3>
             <p class="reasons">
               Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
             </p>
@@ -74,21 +107,18 @@
               <img class="advantages-first-image" src="images/city.jpg" width="800" height="100%" alt="город Седона">
             </li>
             <li class="advantages-item-secondary housing">
-              <img src="images/feature_housing.svg" alt="Домик">
               <h4 class="advantages-header-item">Жилье</h4>
               <p class="advantages-description">
                 Рекомендуем пожить в настоящем мотеле, всё как в кино
               </p>
             </li>
             <li class="advantages-item-secondary">
-              <img src="images/feature_eating.svg" alt="Еда">
               <h4 class="advantages-header-item">Еда</h4>
               <p class="advantages-description">
                 Вегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
             <li class="advantages-item-secondary souvenir">
-              <img src="images/souvenir.svg" alt="Сувениры">
               <h4 class="advantages-header-item">Сувениры</h4>
               <p class="advantages-description">
                 Не только китайского, но и настоящего местного производства!
@@ -161,17 +191,17 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="social-button" href="https://twitter.com/htmlacademy_ru">
-                <img src="images/twitter.svg" alt="твиттер" width="18" height="15">
+                <img src="images/twitter.svg" alt="твиттер">
               </a>
             </li>
             <li class="footer-social-item">
               <a class="social-button" href="https://www.facebook.com/htmlacademy">
-                  <img src="images/facebook.svg" alt="Фейсбук" width="18" height="15">
+                  <img src="images/facebook.svg" alt="Фейсбук">
               </a>
             </li>
             <li class="footer-social-item">
               <a class="social-button" href="https://wwww.youtube.com/c/HTMLAcademyRUS">
-                <img src="images/youtube.svg" alt="ютуб" width="18" height="15">
+                <img src="images/youtube.svg" alt="ютуб">
               </a>
             </li>
           </ul>
@@ -183,48 +213,12 @@
 
         <section class="developer">
           <a class="html-academy" href="https://htmlacademy.ru/">
-            <img src="images/htmlacademy.svg" alt="академия" width="150" height="33">
+            <img src="images/htmlacademy.svg" alt="академия">
           </a>
         </section>
     </footer>
     </div>
-    <div id="popup" class="popup">
-      <a class="popup-area" href="#"></a>
-      <div class="popup-body">
-        <div class="popup-content">
-          <h2 class="search-widjet-tittle">Поиск гостиницы в Седоне</h2>
-          <a class="popup-close" href="#">
-            <img src="images/cross.svg" width="20" height="20" alt="Закрыть">
-          </a>
-          <form class="search-filter" action="https://echo.htmlacademy.ru" method="get">
-            <div class="date-block">
-              <fieldset class="search-filter-group">
-                <div class="search-date-tittle">Дата заезда:</div>
-                <input class="search-filter-item search-date" type="date" id="date">
-              </fieldset>
-              <fieldset class="search-filter-group">
-                <div class="search-date-tittle">Дата выезда:</div>
-                <input class="search-filter-item search-date" type="date" id="date">
-              </fieldset>
-            </div>
-            <div class="number-block">
-              <fieldset class="search-filter-group">
-                <div class="search-number-tittle">Взрослые:</div>
-                <input class="search-filter-item" type="number" id="number" min="0" value="1">
-              </fieldset>
-              <div><i class="fa-solid fa-circle-info"></i></div>
-              <fieldset class="search-filter-group">
-                <div class="search-filter-tittle">Дети:</div>
-                <input class="search-number-item" type="number" id="number" min="0" value="0">
-              </fieldset>
-            </div>
-            <div class="submit-button-block">
-              <button class="widjet-button-submit button" type="submit">Найти</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+  <script src="script.js"></script>
   </body>
 </html>
 

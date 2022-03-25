@@ -239,7 +239,7 @@ body {
   width: 33.3333%;
   display: block;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 180px;
   padding-bottom: 79px;
 }
 
@@ -605,13 +605,9 @@ form {
   list-style-type: none;
 }
 
-.price-filter {
-  padding: 15px;
-  border: 1px solid #E6E6E6;
-  background-color: transparent;
-}
-
 .button-submit {
+  width: 160px;
+  height: 48px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -621,54 +617,14 @@ form {
   color: #FFFFFF;
   background-color: #83B3D3;
   border-radius: 4px;
-  padding-top: 14px;
-  padding-right: 15px;
-  padding-bottom: 14px;
-  padding-left: 15px;
-}
-
-.button-submit:hover {
-  background: #68A2CA;
-  border-radius: 4px;
-}
-
-.button-submit:focus {
-  background: #68A2CA;
-  border: 3px solid #FFFFFF;
-  border-radius: 4px;
-}
-
-.button-submit:active {
-  color: #FFFFFF;
-  opacity: 0.3;
 }
 
 .button-reset {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 23px;
   text-align: center;
   color: #FFFFFF;
-  background-color: transparent;
-}
-
-.button-reset:hover {
-  color: #FFFFFF;
-  opacity: 0.6;
-  background-color: transparent;
-}
-
-.button-reset:focus {
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.button-reset:active {
-  color: #FFFFFF;
-  opacity: 0.3;
-  background-color: transparent;
 }
 
 .found-block {
@@ -848,11 +804,6 @@ form {
   border-radius: 4px;
 }
 
-.dowload-border-block {
-  border: 1px solid #E6E6E6;
-  padding: 30px 0;
-}
-
 .pagination-download-more {
   font-weight: 700;
   font-size: 20px;
@@ -886,7 +837,6 @@ form {
 
 .page-number-container {
   display: flex;
-  margin-top: 30px;
 }
 
 .pagination {
@@ -971,50 +921,28 @@ form {
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
-  margin-top: calc(50%-350px)
 }
 
 .popup-content {
-  width: 550px;
-  height: 350px;
   background-color: #FFFFFF;
   color: #000000;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   padding: 40px;
-  margin-top: calc(50% - 400px);
 }
-
-.search-widjet-tittle {
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 30px;
-  line-height: 40px;
-  padding-top: 17px;
-  padding-left: 30px;
-}
-
-.widjet-button-submit {
-  width: 450px;
-  text-transform: uppercase;
-  background: #83B3D3;
-  border-radius: 10px;
-}
-
 .popup-close {
-  margin-top: 19px;
-  margin-left: 75px;
+    display: block;
+    float: right;
+    width: 20px;
+    text-align: center;
+    background-color: #F2F2F2;
+    margin: auto;
+    border-radius: 50px;
 }
-
 .search-filter {
   flex-direction: column;
-}
-
-.search-date {
-  width: 350px;
-  height: 50px;
+  padding: 50px;
 }
 
 .search-filter-group {
@@ -1024,4 +952,156 @@ form {
 
 .number-block {
   display: flex;
+}
+
+/* .popup-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+} */
+
+.form-input-block {
+    margin-bottom: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.form-label {
+    font-weight: 700;
+    color: #000;
+    display: inline-block;
+    margin-top: 6px;
+    width: 120px;
+}
+.form-input {
+    width: 365px;
+    border: none;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 11px 45px 10px 13px;
+    text-transform: uppercase;
+}
+.amount-people {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.amount-people-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 225px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.amount-form-label {
+    width: auto;
+    margin-right: auto;
+}
+.amount-people-button {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    position: relative;
+}
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+}
+.input-button-minus::after, .input-button-plus::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 13px;
+    background-color: #a9a9a9;
+    top: 18px;
+    left: 12px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-input-num {
+    -moz-appearance: textfield;
+    width: 38px;
+    padding: 10px 0;
+    text-align: center;
+}
+.input-button-plus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 13px;
+    width: 3px;
+    background-color: #a9a9a9;
+    top: 13px;
+    left: 17px;
+}
+.amount-people-block:nth-child(2) {
+    width: 180px;
+}
+.submit-form-button {
+    padding: 16px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    background-color: #81b3d2;
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.block-title-cross{
+    height: 80px;
+}
+.block-title-cross h2 {
+    text-transform: uppercase;
+    float: left;
+    display: block;
 }
